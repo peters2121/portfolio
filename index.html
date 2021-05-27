@@ -11,7 +11,7 @@
       <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Muli">
       <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata">
       <link rel="stylesheet" type="text/css" href="styles.css">
-      <link rel="icon" href="https://ilyasbelaoud.github.io/hosted-assets/logo1.png" type="image/png"/>
+      <!-- <link rel="icon" href="https://ilyasbelaoud.github.io/hosted-assets/logo1.png" type="image/png"/> -->
     </head>
   <link rel="stylesheet" href="./style.css">
     <body>
@@ -20,7 +20,7 @@
         <ul class="nav-list">
           <li class="logo">
             <a href="#">
-              <img src="./pexels-chinmay-singh-843563.jpg"></a>
+              <img src="./portfolio.jpg"></a>
           </li>
           <li>
             <a href="#about-me">About</a>
@@ -50,7 +50,7 @@
        <section class="about-me" id="about-me">
         <div class="HeadingImage"></div>
          <p class="fpr">
-                          I'm a 27-year-old who studied Physiology at Osun state University and also have
+                          I'm a <span id="dob"></span>-year-old who studied Physiology at Osun state University and also have
                           passion for web development
                           <br>
                           <br>
@@ -148,7 +148,15 @@
           <a class="awesome" href="https://twitter.com/i_ampeters" target="_blank">Morakinyo Peters 2021</a>
         </p>
       </footer>
+
       
+      <script>
+        let d= new Date()
+        let year= d.getFullYear()
+        let age=year-1998
+        document.querySelector("#dob").innerHTML= age
+      
+      </script>
     </body>
   
     </html>
